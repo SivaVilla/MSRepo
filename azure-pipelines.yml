@@ -58,4 +58,4 @@ stages:
         azureSubscription: 'visivapr@microsoft.com (a6aa6a37-1766-49ed-b4c6-8ada39c74f6d)'
         appType: 'webAppLinux'
         WebAppName: 'linuxwebappee'
-        packageForLinux: '$(System.ArtifactsDirectory)/**/*.war'
+        packageForLinux: '$(System.ArtifactsDirectory)/**/*.Zip'
