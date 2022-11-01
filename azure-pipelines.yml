@@ -57,5 +57,7 @@ stages:
         ConnectionType: 'AzureRM'
         azureSubscription: 'visivapr@microsoft.com (a6aa6a37-1766-49ed-b4c6-8ada39c74f6d)'
         appType: 'webAppLinux'
-        WebAppName: 'linuxwebappee'
+        WebAppName: 'linuxwebappee' 
+        runtimeStack: 'NODE|10.10'
+        startUpCommand: 'npm run start'
         packageForLinux: '$(System.ArtifactsDirectory)/**/*.Zip'
