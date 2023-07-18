@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- none
 
 pool:
   vmImage: test
@@ -39,6 +39,20 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
+        
+resources:
+  repositories:
+  - repository: s1i
+    type: git
+    name: NodeApp
+    ref: Testbranch #
+    trigger:
+      branches:
+        include:
+        - Testbranch #
+      paths:
+        include:
+        - views/partials
 
 - stage: Dev
   jobs:
