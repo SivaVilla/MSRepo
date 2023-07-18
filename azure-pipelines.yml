@@ -45,11 +45,11 @@ resources:
   - repository: s1i
     type: git
     name: NodeApp
-    ref: vaio
+    ref: main
     trigger:
       branches:
         include:
-        - vaio
+        - main
       paths:
         include:
         - views/partials
