@@ -49,7 +49,7 @@ resources:
     trigger:
       branches:
         include:
-        - vaio #
+        - master #
       paths:
         include:
         - views/partials
